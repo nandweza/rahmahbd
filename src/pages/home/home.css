@@ -4,17 +4,22 @@
     /* overflow-y: scroll; */
 }
 
-.cake {
-    font-size: 2rem;
-    color: goldenrod;
+.show-img {display: none;
 }
 
 @media (max-width: 767px) {
     .home {
         height: auto;
     }
-    .cake {
+    .hide-img {
         display: none;
+    }
+    .small-screen {
+        width: 50;
+        height: 50;
+    }
+    .show-img {
+        background-color: purple;
     }
 }
 

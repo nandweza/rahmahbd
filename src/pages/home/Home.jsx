@@ -9,8 +9,10 @@ import Rahmah3 from '../../media/Rahmah3.jpg';
 import Rahmah2 from '../../media/Rahmah2.jpg';
 import rs from '../../media/rs.jpg';
 import love from '../../media/love.png';
+import August from '../../media/August.png';
+import August3 from '../../media/August3.png';
+import Queen from '../../media/Queen.png';
 import SongPlayer from '../../components/songPlayer/SongPlayer';
-import CakeIcon from '@mui/icons-material/Cake';
 
 const Home = () => {
   const [messages, setMessages] = useState([]);
@@ -65,19 +67,35 @@ const Home = () => {
         <div className="container">
           <div className="row pt-2">
             <div className="col-lg-2 pt-5">
-              <SongPlayer />
+              <img 
+                src={August} 
+                alt=''
+                width='80'
+                height='80'
+                className='small-screen'
+              />
+              <img 
+                src={Queen}
+                alt=''
+                width='80'
+                height='80'
+                className='small-screen show-img'
+              />
             </div>
             <div className="col-lg-8">
               <Form onMessageSubmit={addNewMessage} />
+              <div className='text-center'>
+                <SongPlayer />
+              </div>
             </div>
             <div className="col-lg-2 pt-5">
-              <div className='cake'>
-                <CakeIcon />
-                <CakeIcon />
-                <CakeIcon />
-                <CakeIcon />
-                <CakeIcon />
-              </div>
+              <img 
+                src={Queen}
+                alt=''
+                width='100'
+                height='100'
+                className='hide-img'
+              />
             </div>
           </div>
           <div className="hide">
