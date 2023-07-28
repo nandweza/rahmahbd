@@ -1,0 +1,9 @@
+.song-player button {
+    color: goldenrod;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.song-player span {
+    color: #1da1f2;
+}

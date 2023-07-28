@@ -1,0 +1,67 @@
+.home {
+    height: auto;
+    width: 100vw;
+    /* overflow-y: scroll; */
+}
+
+@media (max-width: 767px) {
+    .home {
+        height: auto;
+    }
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    overflow-x: scroll;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.img-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.img-grid img:hover {
+    width: 300;
+    height: auto;
+}
+
+.message {
+    padding: 1% 15%;
+    font-size: 1rem;
+}
+
+@media (max-width: 991px) {
+    .message {
+        padding: 1% 7%;
+    }
+}
+
+@media (max-width: 767px) {
+    .message {
+        padding: 1% 1%;
+    }
+}
+
+.message .date {
+    font-size: 0.8rem;
+}
+
+.message .text {
+    font-style: italic;
+    font-weight: bold;
+    color: #1da1f2;
+    text-shadow: 1px 1px 1px black;
+}
+
+.message .name {
+    text-align: right;
+    padding-right: 20px;
+    font-size: 1.2rem;
+    font-style: italic;
+}
