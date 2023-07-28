@@ -17,7 +17,7 @@ const Home = () => {
   useEffect(() => {
     const fetchMessages = async () => {
       try {
-        const response = await axios.get('http://127.0.0.1:3002/api/message/');
+        const response = await axios.get('https://rahmah-birthday-api.onrender.com/api/message/');
         setMessages(response.data);
         setCurrentMessageIndex(response.data.length - 1); // Set currentMessageIndex to the last message index
       } catch (err) {

@@ -20,7 +20,7 @@ const Form = ({ onMessageSubmit }) => {
     }
 
     try {
-      const response = await axios.post('http://127.0.0.1:3002/api/message/create', {
+      const response = await axios.post('https://rahmah-birthday-api.onrender.com/api/message/create', {
         name,
         content,
       });
