@@ -8,6 +8,7 @@ import Rahmah4 from '../../media/Rahmah4.jpg';
 import Rahmah3 from '../../media/Rahmah3.jpg';
 import Rahmah2 from '../../media/Rahmah2.jpg';
 import rs from '../../media/rs.jpg';
+import love from '../../media/love.png';
 import SongPlayer from '../../components/songPlayer/SongPlayer';
 
 const Home = () => {
@@ -58,6 +59,15 @@ const Home = () => {
             <div className="col-lg-2 pt-5">
               {/* <CakeRoundedIcon /> */}
             </div>
+          </div>
+          <div className="hide">
+            <img
+              src={love}
+              alt="Rahmah's pic for viewing on screens <=767px"
+              className="img-responsive start"
+              width="400"
+              height="400"
+            />
           </div>
           <div className="img-grid mx-5">
             <div className="img-col p-2">

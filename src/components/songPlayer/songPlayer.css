@@ -7,3 +7,10 @@
 .song-player span {
     color: #1da1f2;
 }
+
+@media (max-width: 767px) {
+    .song-player {
+        display: flex;
+        justify-content: center;
+    }
+}

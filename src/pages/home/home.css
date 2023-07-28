@@ -22,6 +22,19 @@
     scrollbar-width: none;
 }
 
+.hide {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .img-grid {
+        display: none;
+    }
+    .hide {
+        display: block;
+    }
+}
+
 .img-grid::-webkit-scrollbar {
     display: none;
 }
@@ -55,7 +68,7 @@
 .message .text {
     font-style: italic;
     font-weight: bold;
-    color: #1da1f2;
+    color: white;
     text-shadow: 1px 1px 1px black;
 }
 
