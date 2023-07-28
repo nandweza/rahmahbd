@@ -4,9 +4,17 @@
     /* overflow-y: scroll; */
 }
 
+.cake {
+    font-size: 2rem;
+    color: goldenrod;
+}
+
 @media (max-width: 767px) {
     .home {
         height: auto;
+    }
+    .cake {
+        display: none;
     }
 }
 
@@ -67,7 +75,7 @@
 
 .message .text {
     font-style: italic;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: white;
     text-shadow: 1px 1px 1px black;
 }

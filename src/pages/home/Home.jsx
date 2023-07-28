@@ -10,6 +10,7 @@ import Rahmah2 from '../../media/Rahmah2.jpg';
 import rs from '../../media/rs.jpg';
 import love from '../../media/love.png';
 import SongPlayer from '../../components/songPlayer/SongPlayer';
+import CakeIcon from '@mui/icons-material/Cake';
 
 const Home = () => {
   const [messages, setMessages] = useState([]);
@@ -44,6 +45,19 @@ const Home = () => {
     setCurrentMessageIndex(0); // Set currentMessageIndex to the newly added message index
   };
 
+  const getTimeInGeorgia = (date) => {
+    const options = {
+      timeZone: 'America/New_York', // Georgia state time zone
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      second: 'numeric',
+    };
+    return date.toLocaleString(undefined, options);
+  };
+
   return (
     <div className="home">
       <Balloons />
@@ -57,7 +71,13 @@ const Home = () => {
               <Form onMessageSubmit={addNewMessage} />
             </div>
             <div className="col-lg-2 pt-5">
-              {/* <CakeRoundedIcon /> */}
+              <div className='cake'>
+                <CakeIcon />
+                <CakeIcon />
+                <CakeIcon />
+                <CakeIcon />
+                <CakeIcon />
+              </div>
             </div>
           </div>
           <div className="hide">
@@ -65,8 +85,8 @@ const Home = () => {
               src={love}
               alt="Rahmah's pic for viewing on screens <=767px"
               className="img-responsive start"
-              width="400"
-              height="400"
+              width=""
+              height=""
             />
           </div>
           <div className="img-grid mx-5">
@@ -129,7 +149,7 @@ const Home = () => {
           {messages.length > 0 ? (
             <div className="message">
               <p className="date text-center text-muted">
-                {messages[currentMessageIndex].createdAt.toLocaleString()}
+                {getTimeInGeorgia(new Date(messages[currentMessageIndex].createdAt))}
               </p>
               <p className="text">{messages[currentMessageIndex].content}</p>
               <p className="name fw-bold">{messages[currentMessageIndex].name}</p>
