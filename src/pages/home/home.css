@@ -39,14 +39,14 @@
     display: none;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .img-grid {
         display: none;
     }
     .hide {
         display: block;
     }
-}
+} */
 
 .img-grid::-webkit-scrollbar {
     display: none;
@@ -81,7 +81,7 @@
 .message .text {
     font-style: italic;
     /* font-weight: bold; */
-    color: white;
+    color: #1da1f2;
     text-shadow: 1px 1px 1px black;
 }
 
@@ -90,4 +90,6 @@
     padding-right: 20px;
     font-size: 1.2rem;
     font-style: italic;
+    color: goldenrod;
+    text-shadow: 1px 1px 1px black;
 }

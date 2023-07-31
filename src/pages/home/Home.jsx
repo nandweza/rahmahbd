@@ -8,9 +8,8 @@ import Rahmah4 from '../../media/Rahmah4.jpg';
 import Rahmah3 from '../../media/Rahmah3.jpg';
 import Rahmah2 from '../../media/Rahmah2.jpg';
 import rs from '../../media/rs.jpg';
-import love from '../../media/love.png';
+// import love from '../../media/love.png';
 import August from '../../media/August.png';
-import August3 from '../../media/August3.png';
 import Queen from '../../media/Queen.png';
 import SongPlayer from '../../components/songPlayer/SongPlayer';
 
@@ -98,7 +97,7 @@ const Home = () => {
               />
             </div>
           </div>
-          <div className="hide">
+          {/* <div className="hide">
             <img
               src={love}
               alt="Rahmah's pic for viewing on screens <=767px"
@@ -106,7 +105,7 @@ const Home = () => {
               width=""
               height=""
             />
-          </div>
+          </div> */}
           <div className="img-grid mx-5">
             <div className="img-col p-2">
               <div className="card start">
@@ -173,7 +172,7 @@ const Home = () => {
               <p className="name fw-bold">{messages[currentMessageIndex].name}</p>
             </div>
           ) : (
-            <p className='text-center'>Messages Loading ....</p>
+            <p className='text-center fw-bold'>Happy Birthday Dear Rahmah</p>
           )}
         </div>
       </div>
